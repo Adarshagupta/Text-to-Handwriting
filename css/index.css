@@ -46,7 +46,7 @@ body.dark {
 body {
   background-color: var(--background-primary);
   color: var(--font-color-primary);
-  padding: 100px 100px;
+  padding: 0px 10px;
   font-size: 1.05rem;
   font-family: var(--font-family-primary);
 }
@@ -152,10 +152,40 @@ ul.info-ul > li {
   padding-top: 6px;
   padding-bottom: 7px;
 }
+.submit-float{
+  position: fixed;
+  bottom: 0;
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10px auto;
+  width: 100%; /* Adjust width as needed */
+  max-width: 300px; /* Adjust max-width as needed */
+  text-align: center;
+  z-index: 1000; /* Ensure it is on top of other elements */
+}
+
+.generate-image-button {
+  /* Additional styles for the button */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.generate-image-button:hover {
+  background-color: #0056b3;
+}
 
 /* Other Styles */
 .generate-image-section {
-  padding: 10px 10px;
+  padding: 0px 10px;
   font-size: 1.2rem;
 }
 .generate-image-button {
@@ -337,7 +367,7 @@ body.dark .github-corner {
 
 @media (max-width: 768px) {
   body {
-    padding: 100px 10px;
+    padding: 0px 0px;
   }
   h1 {
     margin-top: 20px;

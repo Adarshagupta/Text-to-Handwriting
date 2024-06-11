@@ -91,10 +91,15 @@ body.dark .dark-mode-toggle .sun {
   display: none;
 }
 
+
 .popup-container.show {
   display: block;
 }
-
+.submit-float{
+  position: fixed;
+  bottom: 0;
+}
+.customization-col{}
 .popup-container .close-button {
   position: fixed;
   top: 0px;

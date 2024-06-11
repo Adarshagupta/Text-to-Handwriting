@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -16,7 +17,28 @@
 
       gtag('config', 'UA-125454191-4');
     </script>
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -120,7 +142,6 @@
             src="images/moon.svg"
         /></span>
       </button>
-      <h1>Text to Handwriting</h1>
       <section class="generate-image-section">
         <br /><br />
         <form id="generate-image-form">
@@ -382,14 +403,15 @@
                   width: 80%;
                 "
               />
-              <div style="text-align: center; padding: 30px 0px;">
+              <div class="button-float" style="text-align: center; padding: 30px 0px;">
                 <button
-                  type="submit"
-                  data-testid="generate-image-button"
-                  class="button generate-image-button"
-                >
-                  Generate Image
-                </button>
+                type="submit"
+                data-testid="generate-image-button"
+                class="button generate-image-button button-float fixed-bottom"
+              >
+                Generate Image
+              </button>
+              
               </div>
             </div>
           </div>
@@ -412,119 +434,13 @@
         </div>
       </section>
 
-      <section id="how-to-add-handwriting">
-        <h2>🤓 Guide to add your own handwriting</h2>
-        <div>
-          <ul>
-            <li>
-              To use your handwriting, you will have to generate font of your
-              handwriting.
-            </li>
-            <li>
-              There are websites like
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.calligraphr.com/en/"
-                >Calligraphr</a
-              >
-              that let you do that.
-            </li>
-            <li>
-              Once you get .ttf file of your handwriting, upload it from 'Upload
-              your handwriting font' button in customizations sections
-            </li>
-          </ul>
-        </div>
-      </section>
+      
 
-      <section id="sponsors">
-        <h2>🤗 Sponsors</h2>
-        <p>
-          This tool is completely free and neither stores any of your data for
-          money so maybe you can consider being patron or making an one time
-          payment with buy me a coffee to help the creator 🤗
-        </p>
-        <p>
-          <a href="https://www.patreon.com/bePatron?u=31891872">
-            <img
-              loading="lazy"
-              style="border-radius: 4px;"
-              alt="Buy me a Coffee Button"
-              width="200"
-              src="https://c5.patreon.com/external/logo/become_a_patron_button.png"
-            />
-          </a>
-          &nbsp;
-          <a href="https://www.buymeacoffee.com/saurabhdaware">
-            <img
-              loading="lazy"
-              style="border-radius: 4px;"
-              alt="Buy me a Coffee Button"
-              width="200"
-              src="https://cdn.buymeacoffee.com/buttons/default-yellow.png"
-            />
-          </a>
-        </p>
-      </section>
+      
 
-      <section id="github-contributors">
-        <h2>👫 GitHub Contributors</h2>
-        <div class="project-contributors" id="project-contributors"></div>
-      </section>
-
-      <section id="faq">
-        <h2>❓ FAQs (Frequently Asked Questions)</h2>
-        <div>
-          <h3>1. How can I add my own Handwriting?</h3>
-          <p>
-            Check out
-            <a href="#how-to-add-handwriting"
-              >Guide to add your own Handwriting</a
-            >
-          </p>
-        </div>
-        <div>
-          <h3>2. Where can I get more fonts?</h3>
-          <p>
-            You can use fonts from
-            <a
-              href="https://www.quantumenterprises.co.uk/handwriting-fonts/fontvault.htm"
-              >https://www.quantumenterprises.co.uk/handwriting-fonts/fontvault.htm</a
-            >
-          </p>
-        </div>
-        <div>
-          <h3>3. There are gaps between letters in custom fonts</h3>
-          <p>
-            This is a known issue that we haven't figured out the solution for.
-            As a temporary workaround, there is letter spacing and word spacing
-            option to adjust the gap.
-          </p>
-        </div>
-        <div>
-          <h3>4. Where can I request for features and report bugs?</h3>
-          <p>
-            You can't. This is a read-only project and there will not be any
-            improvements in the project
-          </p>
-        </div>
-      </section>
+     
     </main>
-    <footer style="padding: 40px 0px 10px 0px;">
-      Thank you for using Text to Handwriting! You can follow me on
-      <a href="https://twitter.com/saurabhcodes">Twitter @saurabhcodes</a>
-      <br /><br />Do star the
-      <a href="https://github.com/saurabhdaware/text-to-handwriting"
-        >Text-to-Handwriting GitHub Repository</a
-      >
-      and If you're using it for writing assignments, make sure you use it at
-      your own risk and If it fails and your teacher finds this tool, ask them
-      to star my GitHub as well :D <br />
-      <br />byeeee! <br /><br />
-      ~ Saurabh (<a href="https://saurabhdaware.in">https://saurabhdaware.in</a
-      >)
-    </footer>
+    
 
     <!-- Fixed Elements -->
     <section class="draw-container popup-container">
@@ -569,42 +485,7 @@
       </div>
     </section>
     <!-- GitHub Corner logo -->
-    <a
-      tabindex="0"
-      href="https://github.com/saurabhdaware/text-to-handwriting"
-      rel="noopener noreferrer"
-      target="_blank"
-      class="github-corner"
-      aria-label="View source on GitHub"
-    >
-      <svg
-        width="80"
-        height="80"
-        viewBox="0 0 250 250"
-        style="
-          fill: #151513;
-          color: #fff;
-          position: absolute;
-          top: 0;
-          border: 0;
-          right: 0;
-        "
-        aria-hidden="true"
-      >
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path
-          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-          fill="currentColor"
-          style="transform-origin: 130px 106px;"
-          class="octo-arm"
-        ></path>
-        <path
-          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-          fill="currentColor"
-          class="octo-body"
-        ></path>
-      </svg>
-    </a>
+   
 
     <script
       src="./js/vendors/html2canvas.min.js"
