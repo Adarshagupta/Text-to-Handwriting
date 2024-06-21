@@ -1,126 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-125454191-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+      <!-- Meta Tags -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="theme-color" content="#09f">
+      <meta name="description" content="Convert text to handwriting with this online tool. Simply paste your text, choose a handwriting style, and generate an image that looks handwritten. Perfect for assignments and notes.">
+      <meta name="keywords" content="text to handwriting, convert text to image, write assignment online, handwritten text generator, handwriting font AI">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="author" content="Saurabh Daware">
+      <meta name="robots" content="index, follow">
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Text to Handwriting">
+      <meta property="og:description" content="Convert text to handwriting with this online tool. Simply paste your text, choose a handwriting style, and generate an image that looks handwritten. Perfect for assignments and notes.">
+      <meta property="og:url" content="https://saurabhdaware.github.io/text-to-handwriting">
+      <meta property="og:site_name" content="Text to Handwriting">
+      <meta property="og:image" content="https://res.cloudinary.com/saurabhdaware/image/upload/v1585413874/saurabh2019/projects/text-to-handwriting.png">
+      <meta property="og:image:secure_url" content="https://res.cloudinary.com/saurabhdaware/image/upload/v1585413874/saurabh2019/projects/text-to-handwriting.png">
+      <meta property="og:image:width" content="600">
+      <meta property="og:image:height" content="337">
 
-      gtag('config', 'UA-125454191-4');
-    </script>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Text to Handwriting">
+      <meta name="twitter:description" content="Convert text to handwriting with this online tool. Simply paste your text, choose a handwriting style, and generate an image that looks handwritten. Perfect for assignments and notes.">
+      <meta name="twitter:image" content="https://res.cloudinary.com/saurabhdaware/image/upload/v1585413874/saurabh2019/projects/text-to-handwriting.png">
+      <meta name="twitter:creator" content="@saurabhcodes">
 
-    <!-- Basic -->
-    <meta charset="UTF-8" />
-    <meta name="theme-color" content="#09f" />
-    <meta
-      name="description"
-      content="I hate writing assignments so I made this tool that converts text to an image that looks like handwriting. You can copy paste text content into the textbox and click generate image button to generate image. Text to Handwriting"
-    />
-    <meta
-      name="keywords"
-      content="text to handwriting, text-to-handwrting, saurabh text to handwriting, convert text to image, write assignment online"
-    />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="author" content="Saurabh Daware" />
-    <meta name="copyright" content="Saurabh Daware" />
-    <meta name="robots" content="follow" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Text to Handwriting" />
-    <meta
-      property="og:url"
-      content="https://saurabhdaware.github.io/text-to-handwriting"
-    />
-    <meta
-      property="og:description"
-      content="I hate writing assignments so I made this tool that converts text to an image that looks like handwriting. You can copy paste text content into the textbox and click generate image button to generate image. Text to Handwriting"
-    />
-    <meta property="og:site_name" content="Text to Handwriting" />
+      <!-- Title -->
+      <title>Text to Handwriting</title>
 
-    <meta
-      property="og:image:secure_url"
-      itemprop="image"
-      content="https://res.cloudinary.com/saurabhdaware/image/upload/v1585413874/saurabh2019/projects/text-to-handwriting.png"
-    />
-    <meta
-      property="og:image"
-      itemprop="image"
-      content="https://res.cloudinary.com/saurabhdaware/image/upload/v1585413874/saurabh2019/projects/text-to-handwriting.png"
-    />
-    <meta property="og:image:width" content="600" />
-    <meta property="og:image:height" content="337" />
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:creator" content="@saurabhcodes" />
+      <!-- PWA Manifest -->
+      <link rel="manifest" href="./manifest.webmanifest">
 
-    <title>Text to Handwriting</title>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Roboto|Caveat|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png"
-    />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- PWA Migration -->
-    <link rel="manifest" href="./manifest.webmanifest" />
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="./css/index.css">
+      <link rel="stylesheet" href="./css/features.css">
 
-    <!-- Load Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Homemade+Apple|Roboto|Caveat|Liu+Jian+Mao+Cao&display=swap"
-    />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/features.css" />
+      <!-- Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125454191-4"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-125454191-4');
+      </script>
   </head>
 
+
   <body>
+    <!-- design inspired by https://www.authkit.com/ -->
+    <div class="header">
+      <h2>
+        <a
+          href="https://codepen.io/RAFA3L"
+          target="_blank"
+          rel="noopener noreferrer"
+          >HomeworksAI.xyz</a
+        >
+      </h2>
+      <div
+        class="mid-spot"
+        onclick="document.body.classList.toggle('gold');"
+      ></div>
+      <button class="contact-btn">
+        <span class="glow"></span>
+        <span class="contact-btn-content">Github</span>
+      </button>
+
+      <div class="spotlight">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="accent-lines">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="heroSubP">
+      <p>Introducing</p>
+    </div>
+    <div class="hero">
+      <div class="heroT">
+        <h2>Homeworks AI</h2>
+        <h2>TextsAI</h2>
+      </div>
+    </div>
+    <p class="heroP">
+      Finish Your Homework in a minute<br />
+      powered by NeuralBlend + LigentLab
+    </p>
+    <div class="mountains">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="hero-spacer"></div>
+
+    <div class="content-section">
+      <div class="content-acc">
+      </div>
+     <div>
+    </div>
     <main>
       <button
         aria-label="Activate Dark Mode"
@@ -403,15 +412,17 @@
                   width: 80%;
                 "
               />
-              <div class="button-float" style="text-align: center; padding: 30px 0px;">
-                <button
-                type="submit"
-                data-testid="generate-image-button"
-                class="button generate-image-button button-float fixed-bottom"
+              <div
+                class="button-float"
+                style="text-align: center; padding: 30px 0px;"
               >
-                Generate Image
-              </button>
-              
+                <button
+                  type="submit"
+                  data-testid="generate-image-button"
+                  class="button generate-image-button button-float fixed-bottom"
+                >
+                  Generate Image
+                </button>
               </div>
             </div>
           </div>
@@ -433,14 +444,7 @@
           </button>
         </div>
       </section>
-
-      
-
-      
-
-     
     </main>
-    
 
     <!-- Fixed Elements -->
     <section class="draw-container popup-container">
@@ -485,7 +489,6 @@
       </div>
     </section>
     <!-- GitHub Corner logo -->
-   
 
     <script
       src="./js/vendors/html2canvas.min.js"
