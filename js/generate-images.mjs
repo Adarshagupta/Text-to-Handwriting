@@ -74,26 +74,26 @@ export async function generateImages() {
         wordArray.push(splitContent[wordCount]);
         const currentContent = wordArray.join('');
         paperContentEl.innerHTML = currentContent;
-        
+
         // If we exceed the page height, revert to last valid content and move to next page
         if (paperContentEl.scrollHeight > clientHeight) {
           paperContentEl.innerHTML = lastValidContent;
           break;
         }
-        
+
         lastValidContent = currentContent;
         wordCount++;
       }
 
       pageEl.scrollTo(0, 0);
       await convertDIVToImage();
-      
+
       // If we've processed all words, break
       if (wordCount >= splitContent.length) {
         break;
       }
     }
-    
+
     // Restore the original content
     paperContentEl.innerHTML = initialPaperContent;
   } else {

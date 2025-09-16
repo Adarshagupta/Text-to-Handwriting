@@ -37,10 +37,7 @@
     <meta name="robots" content="follow" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Text to Handwriting" />
-    <meta
-      property="og:url"
-      content="https://github.com/adarshagupta"
-    />
+    <meta property="og:url" content="https://github.com/adarshagupta" />
     <meta
       property="og:description"
       content="I hate writing assignments so I made this tool that converts text to an image that looks like handwriting. You can copy paste text content into the textbox and click generate image button to generate image. Text to Handwriting"
@@ -139,17 +136,29 @@
                     <div contenteditable="true" class="bottom-margin"></div>
                     <div class="paper-content" id="note" contenteditable="true">
                       <div id="context-menu" class="context-menu">
-                        <div class="menu-item" data-style="bold">Bold (Ctrl+B)</div>
-                        <div class="menu-item" data-style="italic">Italic (Ctrl+I)</div>
-                        <div class="menu-item" data-style="underline">Underline (Ctrl+U)</div>
+                        <div class="menu-item" data-style="bold">
+                          Bold (Ctrl+B)
+                        </div>
+                        <div class="menu-item" data-style="italic">
+                          Italic (Ctrl+I)
+                        </div>
+                        <div class="menu-item" data-style="underline">
+                          Underline (Ctrl+U)
+                        </div>
                         <div class="menu-separator"></div>
-                        <div class="menu-item" data-style="larger">Increase Size (Ctrl+Shift+.)</div>
-                        <div class="menu-item" data-style="smaller">Decrease Size (Ctrl+Shift+,)</div>
+                        <div class="menu-item" data-style="larger">
+                          Increase Size (Ctrl+Shift+.)
+                        </div>
+                        <div class="menu-item" data-style="smaller">
+                          Decrease Size (Ctrl+Shift+,)
+                        </div>
                       </div>
-                      Leadership: Leadership is an important function of management which helps to maximize efficiency and to achieve organizational goals. It is the ability to influence a group focused on the achievement of particular goals. Leadership styles define how leaders interact with their teams and influence performance.
-
-          wherer
-
+                      Leadership: Leadership is an important function of
+                      management which helps to maximize efficiency and to
+                      achieve organizational goals. It is the ability to
+                      influence a group focused on the achievement of particular
+                      goals. Leadership styles define how leaders interact with
+                      their teams and influence performance. wherer
                     </div>
                   </div>
                   <div class="overlay"></div>
@@ -174,8 +183,8 @@
                 >
                   Upload Image
                 </button>
-                <input 
-                  type="file" 
+                <input
+                  type="file"
                   id="direct-image-input"
                   accept="image/*"
                   style="display: none;"
@@ -244,10 +253,7 @@
                       >
                         Herbert Cooper
                       </option>
-                      <option
-                        style="font-family: 'QEVRead';"
-                        value="'QEVRead'"
-                      >
+                      <option style="font-family: 'QEVRead';" value="'QEVRead'">
                         V Read
                       </option>
                     </select>
@@ -414,7 +420,10 @@
                 </div>
 
                 <!-- Add margin size controls -->
-                <div class="category-grid margin-inputs" style="margin-top: 10px;">
+                <div
+                  class="category-grid margin-inputs"
+                  style="margin-top: 10px;"
+                >
                   <div class="postfix-input" data-postfix="px">
                     <label for="margin-top">Top Margin</label>
                     <input id="margin-top" type="number" min="0" value="20" />
@@ -425,7 +434,12 @@
                   </div>
                   <div class="postfix-input" data-postfix="px">
                     <label for="margin-bottom">Bottom Margin</label>
-                    <input id="margin-bottom" type="number" min="0" value="20" />
+                    <input
+                      id="margin-bottom"
+                      type="number"
+                      min="0"
+                      value="20"
+                    />
                   </div>
                   <div class="postfix-input" data-postfix="px">
                     <label for="margin-left">Left Margin</label>
@@ -484,21 +498,7 @@
           </button>
         </div>
       </section>
-
-     
-
- 
-
- 
-
- 
-
- 
-
- 
-
     </main>
-
 
     <!-- Fixed Elements -->
     <section class="draw-container popup-container">
@@ -545,7 +545,7 @@
     <!-- GitHub Corner logo -->
     <a
       tabindex="0"
-      href="https://github.com/saurabhdaware/text-to-handwriting"
+      href="https://github.com/Adarshagupta/Text-to-Handwriting"
       rel="noopener noreferrer"
       target="_blank"
       class="github-corner"
@@ -586,14 +586,34 @@
       <div class="popup-content" style="padding: 20px;">
         <h3>Create Your Handwriting Font</h3>
         <p style="font-size: 0.9rem; margin: 10px 0;">
-          Draw each character in the boxes below. Use a stylus or mouse for best results.
+          Draw each character in the boxes below. Use a stylus or mouse for best
+          results.
         </p>
-        <div class="canvas-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 10px; margin: 20px 0; max-height: 70vh; overflow-y: auto; padding: 10px;">
+        <div
+          class="canvas-container"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+            max-height: 70vh;
+            overflow-y: auto;
+            padding: 10px;
+          "
+        >
           <!-- Canvas boxes will be added here by JavaScript -->
         </div>
         <div style="margin-top: 15px; text-align: center;">
-          <button id="clear-handwriting" class="button" style="margin-right: 10px;">Clear All</button>
-          <button id="generate-font" class="button generate-image-button">Generate Font</button>
+          <button
+            id="clear-handwriting"
+            class="button"
+            style="margin-right: 10px;"
+          >
+            Clear All
+          </button>
+          <button id="generate-font" class="button generate-image-button">
+            Generate Font
+          </button>
         </div>
       </div>
     </section>

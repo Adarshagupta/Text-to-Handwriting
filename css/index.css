@@ -29,7 +29,7 @@ body {
 body.dark {
   --background-primary: #44233d;
   --font-color-primary: #fbb6ce;
-  --elevation-background: #521B41;
+  --elevation-background: #521b41;
   --link-color: #f687b3;
   --label-color: #d6bcfa;
   --field-borders: #97266d;
@@ -144,7 +144,8 @@ input {
   width: 100%;
   transition: border-color 0.2s ease;
 }
-input:focus, select:focus {
+input:focus,
+select:focus {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(213, 63, 140, 0.15);
@@ -288,7 +289,8 @@ body.dark .github-corner {
 }
 
 .margined .paper-content {
-  padding: var(--margin-top, 25px) var(--margin-right, 15px) var(--margin-bottom, 20px) var(--margin-left, 35px);
+  padding: var(--margin-top, 25px) var(--margin-right, 15px)
+    var(--margin-bottom, 20px) var(--margin-left, 35px);
   margin: 0px;
   position: relative;
   box-sizing: border-box;
@@ -616,7 +618,7 @@ input[type='file']::before {
   border-radius: 4px;
   padding: 5px 0;
   min-width: 150px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 
@@ -704,7 +706,7 @@ input[type='file']::before {
   display: block;
   margin: 0 auto;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Override line styles when image is present */
